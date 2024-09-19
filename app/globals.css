@@ -39,35 +39,3 @@
 
 /* animation for about me section */
 /* Keyframes for toggling details visibility */
-@keyframes toggle-details {
-  0%, 100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-/* Base styles for cards */
-.skill-card {
-  position: relative;
-  overflow: hidden;
-  transition: opacity 1s ease-in-out;
-}
-
-/* Apply animation to the details */
-.skill-details {
-  animation: toggle-details 12s infinite;
-}
-
-/* Ensure the title is always visible */
-.skill-title {
-  opacity: 1;
-}
-
-/* Ensure details and title are both visible on hover, without animation */
-.skill-card:hover .skill-title,
-.skill-card:hover .skill-details {
-  opacity: 1;
-  animation: none; /* Remove animation on hover */
-}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div id="about-me" className="mb-40">
+    <div id="about-me" className="mb-40  mt-[300px]">
       <div className="container  mx-auto px-6 md:px-12 lg:px-28 mb-12 flex flex-col lg:flex-row gap-16 w-full mt-40">
         <div className="flex flex-col w-full lg:w-3/5 items-start gap-6">
           <div className="flex flex-col">
