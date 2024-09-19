@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* animation for intro section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Delay classes */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 2s;
+}
+
+/* animation for about me section */
+/* Keyframes for toggling details visibility */
+@keyframes toggle-details {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Base styles for cards */
+.skill-card {
+  position: relative;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Apply animation to the details */
+.skill-details {
+  animation: toggle-details 12s infinite;
+}
+
+/* Ensure the title is always visible */
+.skill-title {
+  opacity: 1;
+}
+
+/* Ensure details and title are both visible on hover, without animation */
+.skill-card:hover .skill-title,
+.skill-card:hover .skill-details {
+  opacity: 1;
+  animation: none; /* Remove animation on hover */
+}
