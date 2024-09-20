@@ -16,7 +16,7 @@ export default function Skills() {
             {skillsLists.map((skill, index) => (
               <div
                 key={index}
-                className={`skill-card border-2 border-cyan-400 shadow-md shadow-cyan-400 w-[300px] px-4 py-6 rounded-lg flex flex-col justify-between items-center gap-5 hover:scale-105 hover:shadow-xl hover:border-cyan-500 ${
+                className={`skill-card h-[100px] overflow-hidden border-2 border-cyan-400 shadow-md shadow-cyan-400 w-[300px] px-4 py-6 rounded-lg flex flex-col justify-center items-center gap-5 transition-all duration-500 ease-in-out transform hover:h-[300px] hover:shadow-2xl hover:shadow-cyan-500 hover:scale-105 relative ${
                   index % 2 === 0 ? "even-card" : "odd-card"
                 }`}
               >
@@ -26,7 +26,7 @@ export default function Skills() {
                 </div>
 
                 {/* Details Section */}
-                <div className="skill-details text-center text-gray-300">
+                <div className="skill-details opacity-0 h-0 text-center text-gray-300 transition-all duration-500 ease-in-out hover:opacity-100 hover:h-auto">
                   {skill.details}
                 </div>
               </div>

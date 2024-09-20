@@ -37,5 +37,48 @@
   animation-delay: 2s;
 }
 
-/* animation for about me section */
-/* Keyframes for toggling details visibility */
+/* styles fo skill section */
+@keyframes rotate-shadow {
+  0% {
+    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+  }
+  25% {
+    box-shadow: 10px 0 10px rgba(0,255,255,0.5);
+  }
+  50% {
+    box-shadow: 10px 10px 10px rgba(0,255,255,0.5);
+  }
+  75% {
+    box-shadow: 0 10px 10px rgba(0,255,255,0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0,255,255,0.5);
+  }
+}
+
+
+/* Skill card hover animations */
+.skill-card {
+  position: relative;
+  transition: all 1s ease-in-out;
+  animation: rotate-shadow 2s linear infinite; /* Apply rotating shadow */
+}
+
+/* Hover effect for expanding card */
+.skill-card:hover {
+  height: 300px;
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.5); /* Cyan shadow intensifies on hover */
+}
+
+/* Fade in effect for details */
+.skill-card .skill-details {
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.skill-card:hover .skill-details {
+  opacity: 1;
+  height: auto;
+}
