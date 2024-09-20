@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Intro() {
   return (
-    <div className="px-12 mt-40 w-full flex flex-col items-center">
+    <div className="px-12 mt-10 md:mt-40 w-full flex flex-col items-center">
       <div className="flex flex-col  items-start  gap-6">
         <p className="text-xl text-cyan-400 font-semibold fade-in">
           Hello, my name is
