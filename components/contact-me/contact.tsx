@@ -17,7 +17,7 @@ export default function ContactMe() {
       <div className="flex  flex-col justify-center items-center lg:flex-row gap-12">
         {/* Contact Details */}
         <div className="w-full  flex flex-col gap-6">
-          <div className="grid grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
             <div className="flex items-center -mt-4 gap-3">
               <a
                 href="mailto:atikur.rahman.seo1@mail.com"

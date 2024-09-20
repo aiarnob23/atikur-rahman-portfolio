@@ -2,15 +2,15 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="container flex flex-col mb-40 px-4 gap-16 ml-[280px] w-full mt-40"
+      className="container flex flex-col mb-40 px-4 gap-16 lg:ml-[280px] w-full mt-40"
     >
       <div className="flex flex-col gap-6">
         <div className="mb-4">
-          <p className="text-3xl text-cyan-400 font-semibold">Experience</p>
-          <hr className="border-[1px] mt-1 w-[162px] border-cyan-400" />
+          <p className="text-3xl  text-cyan-400 font-semibold">Experience</p>
+          <hr className="border-[1px] lg:px-0 mt-1 w-[162px] border-cyan-400" />
         </div>
 
-        <div className="flex flex-wrap gap-12">
+        <div className="flex flex-wrap justify-center lg:justify-normal gap-12 ">
           {/* Fiverr SEO Expert Experience */}
           <div className="border-2 border-cyan-400 shadow-lg shadow-cyan-300 w-[400px] px-6 py-6 rounded-lg flex justify-center items-start flex-col gap-5 transition-transform transform hover:scale-105 hover:shadow-xl hover:border-cyan-500">
             <div className="text-2xl font-bold text-cyan-500">
@@ -31,7 +31,7 @@ export default function Experience() {
           </div>
 
           {/* SEO Audits and Consultation */}
-          <div className="border-2  border-cyan-400 shadow-lg shadow-cyan-300 w-[400px] px-6 py-6 rounded-lg flex justify-center items-start flex-col gap-5 transition-transform transform hover:scale-105 hover:shadow-xl hover:border-cyan-500">
+          <div className=" border-cyan-400 border-2 shadow-lg shadow-cyan-300 w-[400px] px-6 py-6 rounded-lg flex justify-center items-start flex-col gap-5 transition-transform transform hover:scale-105 hover:shadow-xl hover:border-cyan-500">
             <div className="text-2xl font-bold text-cyan-500">
               SEO Audits and Consultation
             </div>

@@ -3,14 +3,16 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div id="about-me" className="mb-40  mt-[300px]">
-      <div className="container  mx-auto px-6 md:px-12 lg:px-28 mb-12 flex flex-col lg:flex-row gap-16 w-full mt-40">
+    <div id="about-me" className="mb-40  md:mt-[300px]">
+      {/* about me details */}
+      <div className="container flex-col-reverse  mx-auto px-6 md:px-12 lg:px-28 mb-12 flex  lg:flex-row gap-16 w-full mt-40">
         <div className="flex flex-col w-full lg:w-3/5 items-start gap-6">
           <div className="flex flex-col">
-            <p className="text-3xl text-cyan-400 font-semibold">About Me</p>
+            <p className="text-2xl md:text-3xl text-cyan-400 font-semibold">
+              About Me
+            </p>
             <hr className="border-[1px] mt-2 border-cyan-400 " />
           </div>
-
           <p className="leading-8 text-lg md:text-xl font-medium text-gray-500">
             I am an E-Commerce SEO Specialist. <br />
             <br />
@@ -25,6 +27,7 @@ export default function About() {
             success.
           </p>
         </div>
+        {/* image part */}
         <div className="w-full lg:w-1/2 flex justify-center items-center relative">
           <div className="relative h-[300px] w-[300px]">
             <Image

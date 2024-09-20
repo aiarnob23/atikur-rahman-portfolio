@@ -8,7 +8,7 @@ import Skills from "@/components/skills/skills";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       <Intro />
       <About />
       <Skills />

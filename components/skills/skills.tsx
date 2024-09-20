@@ -8,7 +8,7 @@ export default function Skills() {
       <div className="container mx-auto px-6 md:px-12 lg:px-28 mb-12 flex flex-col lg:flex-row gap-16 w-full mt-40">
         <div className="flex flex-col w-full items-start gap-6">
           <div className="mb-4">
-            <p className="text-3xl mb-2 text-cyan-400 font-semibold">Skills</p>
+            <p className="text-2xl  md:text-3xl mb-2 text-cyan-400 font-semibold">Skills</p>
             <hr className="border-[1px] mt-1 border-cyan-400" />
           </div>
 
